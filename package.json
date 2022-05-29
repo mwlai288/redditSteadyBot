@@ -1,7 +1,21 @@
 {
+  "name": "reddit-bot",
+  "version": "1.0.0",
+  "description": "Steady bot for r/Liverpoolfc",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "dotenv": "^16.0.1",
     "snoostorm": "^1.5.2",
     "snoowrap": "^1.23.0"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "engines": {
+    "node": "16.x"
   }
 }
