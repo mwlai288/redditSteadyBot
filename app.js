@@ -13,10 +13,10 @@ const r = new Snoowrap({
 	password: process.env.REDDIT_PASS
 });
 
-const stream = new CommentStream(r, { subreddit: "Liverpoolfc", results: 25 });
+const stream = new CommentStream(r, { subreddit: "Liverpoolfc", results: 100, pollTime: 5000 });
 
-const steady = 'steady'
 
 stream.on("item", comment => {
+	const steady = 'steady'
     if(comment.body === steady.toLowerCase()) comment.reply(`You say steady to me again when I say something to you and you'll be on the first plane back. ✈️`)
 })
